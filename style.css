@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #E3F2E6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  /* Hero Section with Parallax Background */
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .parallax {
+    background-image: url("images/bg.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #56c795;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+  
+  /* Flower Animation Section */
+  .flower-animation {
+    padding: 50px 20px;
+    background: #fff;
+  }
+  
+  .flower-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flower-display img {
+    width: 300px;
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .flower-info {
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .flower-info p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  #nextStage {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #5bd79f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  #nextStage:hover {
+    background: #1b4332;
+  }
+  
+  /* Footer */
+  /* Footer with Parallax Background and Fly-In Animation */
+footer {
+    position: relative;
+    background-image: url("images/bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 50px 20px;
+    font-size: 1.2em;
+    text-align: center;
+    overflow: hidden;
+    animation: flyIn 1s ease-out;
+  }
+  
+  @keyframes flyIn {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
